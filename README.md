@@ -20,7 +20,7 @@ Projeto da disciplina de Mineração de Texto (Ciência da Computação, UFRPE).
 | Notebook | Conteúdo |
 |---|---|
 | `00_divisao_oficial.ipynb` | Gera e verifica a divisão oficial (já executado) |
-| `01_tradicionais.ipynb` | TF-IDF + LogReg / SVM / Naive Bayes |
+| `01_tradicionais.ipynb` | TF-IDF + LogReg / SVM / Naive Bayes [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LeanderHeitor/fakebr-classificacao/blob/main/01_tradicionais.ipynb) |
 | `02_bertimbau.ipynb` | Fine-tuning do BERTimbau |
 | `03_word2vec_bilstm.ipynb` | Word2Vec + BiLSTM |
 | `04_comparacao.ipynb` | Métricas finais, teste de McNemar e análise de erros |
@@ -33,7 +33,7 @@ df = carregar_corpus()   # baixa o Fake.br em data/ na primeira vez
 treino = df[df.split == "treino"]
 ```
 
-No Colab, a primeira célula de cada notebook clona este repositório. Por ser privado, o clone precisa de um token do GitHub salvo nos *Secrets* do Colab com o nome `GITHUB_TOKEN`.
+No Colab, a primeira célula de cada notebook clona este repositório e entra na pasta dele. Para abrir um notebook direto no Colab: *Arquivo → Abrir notebook → GitHub* e cole `LeanderHeitor/fakebr-classificacao`.
 
 ## Referências
 
