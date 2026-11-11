@@ -1,0 +1,32 @@
+Contexto cadeira de mineração de texto da faculdade de ciências da computação UFRPE
+
+O projeto tem como objetivo classificar notícias escritas em português brasileiro como verdadeiras ou falsas. Pretendemos comparar abordagens tradicionais de classificação de texto, utilizando TF-IDF combinado com modelos como Regressão Logística e SVM, com uma abordagem baseada em embeddings. Os modelos serão avaliados por meio de métricas como acurácia, precisão, revocação e F1-score, além da análise de exemplos de erros de classificação para identificar limitações e diferenças entre os métodos.
+
+Usando o dataset: https://github.com/roneysco/Fake.br-Corpus (pode dar clone) 
+
+@all Pessoal, depois da reunião com o professor anotei algumas coisas do que ele disse, logo precisamos comparar duas abordagens diferentes de classificação de textos: algoritmos tradicionais de Machine Learning e modelos de Deep Learning.
+
+Pensei em organizar os experimentos da seguinte forma:
+
+*1. Grupo de Machine Learning tradicional*
+- TF-IDF + Regressão Logística
+- TF-IDF + SVM
+- TF-IDF + Naive Bayes
+
+O notebook 03d_ClassificaçãoTextos-Spacy-scikit-learn.ipynb que o professor disponibilizou já contém exemplos desses classificadores, então podemos utilizá-lo como referência e adaptar ao Fake.Br.
+
+*2. Grupo de Deep Learning*
+- BERTimbau Base, fazendo fine-tuning para classificar notícias verdadeiras e falsas.
+- Word2Vec + BiLSTM, utilizando embeddings de palavras em uma rede neural.
+
+O BERTimbau foi o modelo que o professor indicou: https://huggingface.co/neuralmind/bert-base-portuguese-cased
+
+*3. Comparação final*
+
+A ideia seria treinar os modelos com o mesmo dataset https://github.com/roneysco/Fake.br-Corpus , utilizar a mesma divisão dos dados e comparar os resultados por acurácia, precisão, recall, F1-score e matriz de confusão.
+
+Também poderíamos analisar quais notícias foram classificadas incorretamente e verificar se o Deep Learning realmente trouxe melhorias em comparação aos métodos tradicionais.
+
+Acredito que assim atenderíamos ao que o professor pediu, principalmente por utilizarmos vários algoritmos e incluirmos Deep Learning obrigatoriamente.
+
+O que vocês acham dessa divisão? Podemos definir quem fica responsável pelos classificadores tradicionais e quem trabalha com os modelos de Deep Learning.

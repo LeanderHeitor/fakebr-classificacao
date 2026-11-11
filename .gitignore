@@ -1,0 +1,4 @@
+data/Fake.br-Corpus/
+__pycache__/
+.ipynb_checkpoints/
+.venv/
